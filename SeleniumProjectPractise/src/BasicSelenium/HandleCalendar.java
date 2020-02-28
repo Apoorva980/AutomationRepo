@@ -52,7 +52,7 @@ public class HandleCalendar {
 		while(!dr.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText().equals("January"))
 			dr.findElement(By.xpath("//a[@title='Prev']"));
 		
-		
+		int row = dr.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr")).size();
 			
 		
 

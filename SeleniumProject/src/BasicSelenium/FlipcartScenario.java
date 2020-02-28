@@ -56,6 +56,7 @@ public class FlipcartScenario {
 
 		dr.close();
 
+		Thread.sleep(2000);
 		dr.switchTo().window(parent);
 
 		dr.findElement(By.xpath("//img[@class='_3togXc']")).click();
